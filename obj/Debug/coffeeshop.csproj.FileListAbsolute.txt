@@ -1,0 +1,166 @@
+C:\Users\Ron\source\repos\coffeeshop\obj\Debug\coffeeshop.csproj.AssemblyReference.cache
+C:\Users\Ron\source\repos\coffeeshop\obj\Debug\coffeeshop.csproj.CoreCompileInputs.cache
+C:\Users\Ron\source\repos\coffeeshop\bin\coffeeshop.dll.config
+C:\Users\Ron\source\repos\coffeeshop\bin\coffeeshop.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\coffeeshop.pdb
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\csc.exe
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\csc.exe.config
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\csc.rsp
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\csi.exe
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\csi.exe.config
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\csi.rsp
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.AppContext.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Console.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Net.Http.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\vbc.exe
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\vbc.exe.config
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\vbc.rsp
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ron\source\repos\coffeeshop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ron\source\repos\coffeeshop\bin\Antlr3.Runtime.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\EntityFramework.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\EntityFramework.SqlServer.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\Newtonsoft.Json.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.Helpers.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.Mvc.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.Optimization.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.Razor.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.WebPages.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\WebGrease.dll
+C:\Users\Ron\source\repos\coffeeshop\bin\EntityFramework.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\EntityFramework.SqlServer.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.Helpers.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.Mvc.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.Optimization.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.Razor.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.WebPages.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\Newtonsoft.Json.xml
+C:\Users\Ron\source\repos\coffeeshop\bin\Antlr3.Runtime.pdb
+C:\Users\Ron\source\repos\coffeeshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ron\source\repos\coffeeshop\obj\Debug\coffeeshop.csproj.CopyComplete
+C:\Users\Ron\source\repos\coffeeshop\obj\Debug\coffeeshop.dll
+C:\Users\Ron\source\repos\coffeeshop\obj\Debug\coffeeshop.pdb
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\coffeeshop.dll.config
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\coffeeshop.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\coffeeshop.pdb
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\csc.exe
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\csc.exe.config
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\csc.rsp
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\csi.exe
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\csi.exe.config
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\csi.rsp
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.AppContext.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Console.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Net.Http.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\vbc.exe
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\vbc.exe.config
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\vbc.rsp
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\Antlr3.Runtime.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\EntityFramework.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\EntityFramework.SqlServer.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\Newtonsoft.Json.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.Helpers.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.Mvc.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.Optimization.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.Razor.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.WebPages.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\WebGrease.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\EntityFramework.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\EntityFramework.SqlServer.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.Helpers.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.Mvc.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.Optimization.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.Razor.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.WebPages.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\Newtonsoft.Json.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\Antlr3.Runtime.pdb
+C:\Users\Ron\source\repos\coffeeshop - Copy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ron\source\repos\coffeeshop - Copy\obj\Debug\coffeeshop.csproj.AssemblyReference.cache
+C:\Users\Ron\source\repos\coffeeshop - Copy\obj\Debug\coffeeshop.csproj.CoreCompileInputs.cache
+C:\Users\Ron\source\repos\coffeeshop - Copy\obj\Debug\coffeeshop.csproj.CopyComplete
+C:\Users\Ron\source\repos\coffeeshop - Copy\obj\Debug\coffeeshop.dll
+C:\Users\Ron\source\repos\coffeeshop - Copy\obj\Debug\coffeeshop.pdb

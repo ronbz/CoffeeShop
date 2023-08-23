@@ -1,0 +1,280 @@
+﻿@model coffeeshop.ModelView.MenuViewModel
+@using coffeeshop.Models;
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Menu</title>
+</head>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+<body>
+    <br />
+    <style>
+        tr {
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: midnightblue;
+            color: white;
+        }
+
+        th, td {
+            text-align: center;
+            max-width: 120px;
+            min-width: 50px;
+        }
+
+        tr:hover {
+            background-color: paleturquoise;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #myInput {
+            @*background-image: url('/css/searchicon.png');*@
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 430px;
+            max-width:500px;
+            font-size: 16px;
+            padding: 12px 20px 12px 12px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+        .price {
+            display: flex;
+            align-items: center;
+        }
+
+        h3 {
+            font-size: 26px;
+            font-weight: bold;
+            width: 320px;
+            margin-left: 170px;
+        }
+    </style>
+    <h3>Main Menu</h3>
+    <input type="text" id="myInput" onkeyup="searchFunc()" placeholder="Search for items" title="Type in a name">
+    <div>
+        <button onclick="displayDiscFunc(data)">Show Discounted</button>
+        <button onclick="sortMenu(1)">Sort A->B</button>
+        <button onclick="sortMenu(3)">Sort Ascending price</button>
+        <button onclick="sortMenu(3,1)">Sort Descending price</button>
+        <button onclick="sortMenu(5)">Sort by popularity</button>
+    </div>
+    <br />
+    <table id="menuTable">
+        <tr>
+            <td></td>
+            <th>Item Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Is item available?</th>
+            <th>Popularity</th>
+        </tr>
+    </table>
+    @Html.Partial("DisplayMenu", Model);
+    <div class="price">
+        The Total Price is:
+        <p id="totprice" style="margin: 0 0 0 10px"> 0</p>
+    </div>
+    <br />
+    <div>
+        <input id="discountButton" style="width:200px;" oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" type="number" maxlength="9" onkeydown="return event.keyCode= = =8 || event.keyCode= = =46 ? true : !isNaN(Number(event.key))" placeholder="Enter VIP member ID" />
+        <button onclick="applyDiscount()">Apply</button>
+        <p id="eligible"></p>
+    </div>
+    <script language="javascript">
+        $.get("getVipsByJson", null, BindVips);
+        $.get("getItemsByJson", null, BindData);
+        var vipData;
+        function BindVips(vips) {
+            vipData = vips;
+        }
+        var data;
+        var data2;
+        var totalPrice = 0;
+        function BindData(items) {
+            data = items;
+            data2 = Object.assign({}, data);
+            var tbl = $("#menuTable");
+            var price = "";
+            var disabled = "";
+            for (i = 0; i < items.length; i++) {
+                data[i].quantity = 0;
+                if (items[i].itemDiscount > 0) {
+
+                    price = "<strike>" + items[i].itemPrice + "</strike> " + items[i].itemDiscount;
+                }
+                else {
+                    price = items[i].itemPrice;
+                }
+                if (!items[i].itemAvailable) {
+                    disabled = 'disabled';
+                }
+                else {
+                    disabled = '';
+                }
+                var newRow = "<tr>" +
+                    "<td> <img src=\"../../images/" + items[i].itemImg + "\"/></td>" +
+                    "<td>" + items[i].itemName + "</td>" +
+                    "<td>" + items[i].itemDesc + "</td>" +
+                    "<td>" + price + "</td>" +
+                    "<td>" + items[i].itemAvailable + "</td>" +
+                    "<td>" + items[i].itemCount + "</td>" +
+                    "<td> <input id=\"" + i +
+                    "\"" + disabled + " style=\"width:40px;\" oninput=\" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)\" type=\"number\" maxlength=\"1\" onkeydown=\"return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))\" min=\"0\" max=\"9\" onchange=\"calcPrice(this.value,this.id)\"/> </td>" +
+                    "</tr>"
+                tbl.append(newRow);
+            }
+        }
+
+        function calcPrice(quantity, index) {
+            data2 = Object.values(data2);
+            data2[index].quantity = quantity;
+            var sum = 0;
+            for (var i = 0; i < data2.length; i++) {
+                if (data2[i].itemDiscount > 0) {
+                    sum += data2[i].quantity * data2[i].itemDiscount;
+                } else {
+                    sum += data2[i].quantity * data2[i].itemPrice;
+                }
+            }
+            document.getElementById('totprice').innerHTML = sum;
+        }
+
+        function applyDiscount() {
+            vipData = Object.values(vipData);
+            var tmp = document.getElementById("discountButton").value;
+            for (i = 0; i < vipData.length; i++) {
+                if (vipData[i].vipId == tmp && vipData[i].vipCount == 10) {
+                    vipData[i].vipCount = 0;
+                    document.getElementById("eligible").textContent = "Hey " + vipData[i].vipName + " You get a free cup of coffee!";
+                    break;
+                }
+                else if (vipData[i].vipId == tmp && vipData[i].vipCount < 10) {
+                    vipData[i].vipCount += 1;
+                    document.getElementById('eligible').textContent = "Hey " + vipData[i].vipName + " You need " + (11 - vipData[i].vipCount) + " cups for your free drink!";
+                    break;
+                }
+                else {
+                    document.getElementById('eligible').textContent = "User not a VIP member";
+                }
+            }
+        }
+
+        function searchFunc() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("menuTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function showAll() {
+            table = document.getElementById("menuTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                tr[i].style.display = "";
+            }
+        }
+        function displayDiscFunc(items) {
+            showAll()
+            var table, tr, i;
+            table = document.getElementById("menuTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length - 1; i++) {
+                if (items[i].itemDiscount == 0) {
+                    tr[i + 1].style.display = "none";
+                } else {
+                    tr[i + 1].style.display = "";
+                }
+            }
+        }
+
+        function sortMenu(index, flag = 0) {
+            showAll()
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("menuTable");
+            switching = true;
+            /*Make a loop that will continue until
+            no switching has been done:*/
+            while (switching) {
+                //start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /*Loop through all table rows (except the
+                first, which contains table headers):*/
+                for (i = 1; i < (rows.length - 1); i++) {
+                    //start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /*Get the two elements you want to compare,
+                    one from current row and one from the next:*/
+                    x = rows[i].getElementsByTagName("TD")[index];
+                    y = rows[i + 1].getElementsByTagName("TD")[index];
+                    //check if the two rows should switch place:
+                    if (index == 1 && x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                    else if (index == 3 && flag == 0 && x.innerHTML < y.innerHTML) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                    else if (index == 3 && flag == 1 && x.innerHTML > y.innerHTML) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                    else if (index == 5 && flag == 0 && x.innerHTML < y.innerHTML) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    /*If a switch has been marked, make the switch
+                    and mark that a switch has been done:*/
+                    var tmp = data[i - 1];
+                    console.log({ tmp });
+                    var tmp2 = data[i];
+                    console.log({ tmp2 });
+                    data[i - 1] = tmp2;
+                    data[i] = tmp;
+                    console.log(data);
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
+
+
+</body>
+</html>

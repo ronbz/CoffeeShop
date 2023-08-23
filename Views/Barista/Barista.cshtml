@@ -1,0 +1,163 @@
+﻿@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RDA CoffeeShop - Menu</title>
+</head>
+<body>
+
+    <h1> Welcome, barista worker!</h1>
+
+    <img src="https://www.lironboylston.com/wp-content/uploads/2020/12/ppp-why-wont-anyone-rescue-restaurants-FT-BLOG0420.jpg" alt="restaurant" style="width:600px;height:450px;">
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 900px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+
+
+
+
+    <h2>Waiting orders:</h2>
+
+    <table>
+        <tr>
+            <th>Order</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1 big Latte</td>
+            <td>Maria</td>
+
+        </tr>
+        <tr>
+            <td>Salamon sandwich + 1 little capuccino</td>
+            <td>Ron</td>
+
+        </tr>
+        <tr>
+            <td>2 capuccino + salad + chocolate bar</td>
+            <td>Noa</td>
+
+        </tr>
+        <tr>
+            <td>Cheese cake + tea</td>
+            <td>Helen</td>
+
+        </tr>
+    </table>
+
+
+
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+
+            .form-container .cancel {
+                background-color: gray;
+            }
+
+
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+
+
+
+
+
+    <button class="open-button" onclick="openForm()">Take new order</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>No new orders yet...</h1>
+
+
+
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+    </script>
+</body>
+
+</html>
+

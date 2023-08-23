@@ -1,0 +1,58 @@
+﻿@model coffeeshop.ModelView.MenuViewModel
+@using coffeeshop.Models
+
+<br />
+<style>
+    tr {
+        text-align: center;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th {
+        background-color: red;
+        color: lawngreen;
+    }
+
+    th, td {
+        text-align: center;
+    }
+
+    tr:hover {
+        background-color: lawngreen;
+    }
+
+</style>
+<table>
+    <tr>Main Menu</tr>
+    <tr>
+        <td></td>
+        <th>Item Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Is item available?</th>
+    </tr>
+    @foreach (Item obj in Model.items)
+    {
+        <tr>
+            <td>
+                <img src="../../images/@obj.itemImg"
+                     width="100"
+                     height="100"
+            </td>
+            <td>@obj.itemName</td>
+            <td>@obj.itemDesc</td>
+            @if (@obj.itemDiscount > 0)
+            {
+                <td><strike>@obj.itemPrice</strike> @obj.itemDiscount</td>
+            }
+            else
+            {
+                <td>@obj.itemPrice</td>
+            }
+            <td>@obj.itemAvailable</td>
+        </tr>
+    }
+</table>
